@@ -1,21 +1,23 @@
 package com.guitargigkok.activity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.MotionEvent;
 import android.view.View;
+import android.view.View.OnClickListener;
 import android.widget.ImageButton;
 
 import com.narongritp.guitargigkok.R;
 
 public class MainMenuActivity extends AppCompatActivity {
 
-    ImageButton vbt_chording;
-    ImageButton vbt_strum;
-    ImageButton vbt_setting;
-    ImageButton vbt_acous;
-    ImageButton vbt_examchord;
-    ImageButton vbt_poweroff;
+    ImageButton vbt_chording;//การจับคอร์ด
+    ImageButton vbt_strum;//การดีด
+    ImageButton vbt_setting;//การตั้งค่า
+    ImageButton vbt_acous;//การเกาสาย
+    ImageButton vbt_examchord;//ตัวอย่างคอร์ด
+    ImageButton vbt_poweroff;//ปุ่มปิด
 
 
     @Override
@@ -23,6 +25,7 @@ public class MainMenuActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main_menu);
         init();
+        initActionButton();
 
 
     }
@@ -105,4 +108,61 @@ public class MainMenuActivity extends AppCompatActivity {
         System.out.println("init component successful");
     }
 
+    private void initActionButton(){
+        vbt_chording.setOnClickListener(new OnClickListener(){
+
+            @Override
+            public void onClick(View v) {
+                System.out.println("open chording");
+                Intent intent = new Intent(MainMenuActivity.this, ChordingActivity.class);
+                startActivity(intent);
+            }
+        });
+        vbt_strum.setOnClickListener(new OnClickListener(){
+
+            @Override
+            public void onClick(View v) {
+                System.out.println("open strum");
+                Intent intent = new Intent(MainMenuActivity.this, StrumActivity.class);
+                startActivity(intent);
+            }
+        });
+        vbt_setting.setOnClickListener(new OnClickListener(){
+
+            @Override
+            public void onClick(View v) {
+                System.out.println("open setting");
+                Intent intent = new Intent(MainMenuActivity.this, SettingActivity.class);
+                startActivity(intent);
+            }
+        });
+        vbt_acous.setOnClickListener(new OnClickListener(){
+
+            @Override
+            public void onClick(View v) {
+                System.out.println("open acous");
+                Intent intent = new Intent(MainMenuActivity.this, AcousActivity.class);
+                startActivity(intent);
+            }
+        });
+        vbt_examchord.setOnClickListener(new OnClickListener(){
+
+            @Override
+            public void onClick(View v) {
+                System.out.println("open exam chord");
+                Intent intent = new Intent(MainMenuActivity.this, ExamChordActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        vbt_poweroff.setOnClickListener(new OnClickListener(){
+
+            @Override
+            public void onClick(View v) {
+                System.out.println("closed app");
+                finish();
+            }
+        });
+
+    }
 }
