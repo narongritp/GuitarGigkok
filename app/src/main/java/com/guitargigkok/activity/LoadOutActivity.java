@@ -26,6 +26,7 @@ public class LoadOutActivity extends AppCompatActivity {
             public void run() {
                 Intent i = new Intent(LoadOutActivity.this, MainMenuActivity.class);
                 startActivity(i);
+                overridePendingTransition(android.R.anim.fade_in, android.R.anim.slide_out_right);
                 finish();
             }
         }, LOAD_TIME_OUT);

@@ -7,48 +7,54 @@
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context="com.guitargigkok.activity.MainMenuActivity">
 
-    <LinearLayout
-        android:orientation="vertical"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/scrollView2" >
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
 
 
-        <ImageButton
-            android:layout_width="fill_parent"
-            android:layout_height="105dp"
-            android:id="@+id/vbt_choding"
-            android:background="@drawable/bt_chording" />
+            <ImageButton
+                android:layout_width="fill_parent"
+                android:layout_height="105dp"
+                android:id="@+id/vbt_choding"
+                android:background="@drawable/bt_chording" />
 
-        <ImageButton
-            android:layout_width="fill_parent"
-            android:layout_height="105dp"
-            android:id="@+id/vbt_strum"
-            android:background="@drawable/bt_basicstrum" />
+            <ImageButton
+                android:layout_width="fill_parent"
+                android:layout_height="105dp"
+                android:id="@+id/vbt_strum"
+                android:background="@drawable/bt_basicstrum" />
 
-        <ImageButton
-            android:layout_width="fill_parent"
-            android:layout_height="105dp"
-            android:id="@+id/vbt_setting"
-            android:layout_gravity="center_horizontal"
-            android:background="@drawable/bt_setting" />
+            <ImageButton
+                android:layout_width="fill_parent"
+                android:layout_height="105dp"
+                android:id="@+id/vbt_setting"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/bt_setting" />
 
-        <ImageButton
-            android:layout_width="fill_parent"
-            android:layout_height="105dp"
-            android:background="@drawable/bt_acous"
-            android:id="@+id/vbt_acous" />
+            <ImageButton
+                android:layout_width="fill_parent"
+                android:layout_height="105dp"
+                android:background="@drawable/bt_acous"
+                android:id="@+id/vbt_acous" />
 
-        <ImageButton
-            android:layout_width="fill_parent"
-            android:layout_height="105dp"
-            android:id="@+id/vbt_exchord"
-            android:background="@drawable/bt_exchord" />
+            <ImageButton
+                android:layout_width="fill_parent"
+                android:layout_height="105dp"
+                android:id="@+id/vbt_exchord"
+                android:background="@drawable/bt_exchord" />
 
-        <ImageButton
-            android:layout_width="fill_parent"
-            android:layout_height="105dp"
-            android:id="@+id/vbt_poweroff"
-            android:background="@drawable/bt_poweroff" />
-    </LinearLayout>
+            <ImageButton
+                android:layout_width="fill_parent"
+                android:layout_height="105dp"
+                android:id="@+id/vbt_poweroff"
+                android:background="@drawable/bt_poweroff" />
+        </LinearLayout>
+    </ScrollView>
 
 </LinearLayout>

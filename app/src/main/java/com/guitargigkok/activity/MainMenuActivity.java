@@ -116,6 +116,7 @@ public class MainMenuActivity extends AppCompatActivity {
                 System.out.println("open chording");
                 Intent intent = new Intent(MainMenuActivity.this, ChordingActivity.class);
                 startActivity(intent);
+                overridePendingTransition(android.R.anim.slide_in_left, android.R.anim.slide_out_right);
             }
         });
         vbt_strum.setOnClickListener(new OnClickListener(){
@@ -125,6 +126,7 @@ public class MainMenuActivity extends AppCompatActivity {
                 System.out.println("open strum");
                 Intent intent = new Intent(MainMenuActivity.this, StrumActivity.class);
                 startActivity(intent);
+                overridePendingTransition(android.R.anim.slide_in_left, android.R.anim.slide_out_right);
             }
         });
         vbt_setting.setOnClickListener(new OnClickListener(){
@@ -134,6 +136,7 @@ public class MainMenuActivity extends AppCompatActivity {
                 System.out.println("open setting");
                 Intent intent = new Intent(MainMenuActivity.this, SettingActivity.class);
                 startActivity(intent);
+                overridePendingTransition(android.R.anim.slide_in_left, android.R.anim.slide_out_right);
             }
         });
         vbt_acous.setOnClickListener(new OnClickListener(){
@@ -143,6 +146,7 @@ public class MainMenuActivity extends AppCompatActivity {
                 System.out.println("open acous");
                 Intent intent = new Intent(MainMenuActivity.this, AcousActivity.class);
                 startActivity(intent);
+                overridePendingTransition(android.R.anim.slide_in_left, android.R.anim.slide_out_right);
             }
         });
         vbt_examchord.setOnClickListener(new OnClickListener(){
@@ -152,6 +156,7 @@ public class MainMenuActivity extends AppCompatActivity {
                 System.out.println("open exam chord");
                 Intent intent = new Intent(MainMenuActivity.this, ExamChordActivity.class);
                 startActivity(intent);
+                overridePendingTransition(android.R.anim.slide_in_left, android.R.anim.slide_out_right);
             }
         });
 
