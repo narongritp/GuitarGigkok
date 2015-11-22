@@ -15,6 +15,7 @@ import java.util.HashMap;
 public class SettingActivity extends AppCompatActivity {
 
     ImageButton bt_back;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -27,6 +28,7 @@ public class SettingActivity extends AppCompatActivity {
 
     private void init(){
         bt_back = (ImageButton) findViewById(R.id.bt_back);
+
     }
 
     private void initActionButton() {

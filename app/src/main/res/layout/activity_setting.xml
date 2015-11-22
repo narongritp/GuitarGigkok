@@ -30,23 +30,34 @@
 
     </LinearLayout>
 
-    <LinearLayout
-        android:orientation="horizontal"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_gravity="center_horizontal">
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/scrollView"
+        android:fillViewport="true"
+        >
 
-        <ScrollView
-            android:layout_width="fill_parent"
-            android:layout_height="fill_parent"
-            android:id="@+id/scrollView" >
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/img_display1"
+                android:src="@drawable/set1"
+                android:adjustViewBounds="true" />
 
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/imageView" />
-        </ScrollView>
+                android:id="@+id/img_display2"
+                android:src="@drawable/set2"
+                android:adjustViewBounds="true" />
 
-    </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
 
 </LinearLayout>

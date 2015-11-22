@@ -37,13 +37,17 @@ public class AcousActivity extends AppCompatActivity {
         img_display = (ImageView) findViewById(R.id.img_display);
         list_selectMode = (ListView) findViewById(R.id.list_selectmode);
         String[] chords = {
-                "#1","#2","#3"};
+                "#Intro","#1","#2","#3","#4","#5","#6"};
         adapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, chords);
         list_selectMode.setAdapter(adapter);
         imgContent = new HashMap<String,Integer>();
-        imgContent.put(chords[0],R.drawable.chord_a);
-        imgContent.put(chords[1],R.drawable.chord_b);
-        imgContent.put(chords[2],R.drawable.chord_c);
+        imgContent.put(chords[0],R.drawable.acous_1);
+        imgContent.put(chords[1],R.drawable.acous_2);
+        imgContent.put(chords[2],R.drawable.acous_3);
+        imgContent.put(chords[3],R.drawable.acous_4);
+        imgContent.put(chords[4],R.drawable.acous_5);
+        imgContent.put(chords[5],R.drawable.acous_6);
+        imgContent.put(chords[6],R.drawable.acous_7);
     }
 
     private void initActionButton() {

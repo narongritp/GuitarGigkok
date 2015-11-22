@@ -45,7 +45,7 @@
                 android:layout_height="fill_parent"
                 android:id="@+id/img_display"
                 android:background="#ffe9e9"
-                android:scaleType="fitCenter" />
+                android:adjustViewBounds="true" />
         </LinearLayout>
 
         <LinearLayout
